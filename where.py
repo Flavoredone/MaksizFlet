@@ -6,7 +6,7 @@ def example(page):
     st1 = ft.Column(
         [
             ft.Image(
-                src=f"assets/where/1.png",
+                src=f"where/1.png",
                 height=int(int(page.height) / 7.7),
             ),
             ft.Text("Компания: АО «ФПГ ЭНЕРГОКОНТРАКТ»"),
@@ -19,7 +19,7 @@ def example(page):
     st2 = ft.Column(
         [
             ft.Image(
-                src=f"assets/where/2.png",
+                src=f"where/2.png",
                 height=int(int(page.height) / 7.7),
             ),
             ft.Text("Компания: «Техноавиа»"),
@@ -32,7 +32,7 @@ def example(page):
     st3 = ft.Column(
         [
             ft.Image(
-                src=f"assets/where/3.png",
+                src=f"where/3.png",
                 height=int(int(page.height) / 7.7),
             ),
             ft.Text("Компания: «ВОСТОК-СЕРВИС»"),
