@@ -57,11 +57,11 @@ def example(page):
                         spacing=70,
                         controls=[
                             ft.Container(
-                                content=ft.Image(src="assets/comb/1.png"),
+                                content=ft.Image(src="comb/1.png"),
                                 on_click=comb_view1,
                             ),
                             ft.Container(
-                                content=ft.Image(src="assets/comb/2.png"),
+                                content=ft.Image(src="comb/2.png"),
                                 on_click=comb_view2,
                             )
                         ]
@@ -72,11 +72,11 @@ def example(page):
                         spacing=70,
                         controls=[
                             ft.Container(
-                                content=ft.Image(src="assets/comb/3.png"),
+                                content=ft.Image(src="comb/3.png"),
                                 on_click=comb_view3,
                             ),
                             ft.Container(
-                                content=ft.Image(src="assets/comb/4.png"),
+                                content=ft.Image(src="comb/4.png"),
                                 on_click=comb_view4,
                             )
                         ]
@@ -87,18 +87,18 @@ def example(page):
                         spacing=70,
                         controls=[
                             ft.Container(
-                                content=ft.Image(src="assets/comb/5.png"),
+                                content=ft.Image(src="comb/5.png"),
                                 on_click=comb_view5,
                             ),
                             ft.Container(
-                                content=ft.Image(src="assets/comb/6.png"),
+                                content=ft.Image(src="comb/6.png"),
                                 on_click=comb_view6,
                             )
                         ]
                     ),
                     ft.Container(
                         height=int(int(page.height) / 5.5),
-                        content=ft.Image(src="assets/comb/7.png"),
+                        content=ft.Image(src="comb/7.png"),
                         on_click=comb_view7,
                     )
                 ],
