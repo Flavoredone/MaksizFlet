@@ -42,7 +42,7 @@ def example(page):
                 name="КОБИНЕЗОНЫ",
                 file_name="comb.py",
                 view=comb.example(page),
-                content=ft.Image(src="assets/с1.png",
+                content=ft.Image(src="с1.png",
                                  height=int(int(page.height) / 3.5),
                                  fit=ft.ImageFit.FIT_HEIGHT
                                  ),
@@ -51,7 +51,7 @@ def example(page):
                 name="ПЕРЧАТКИ",
                 file_name="gloves.py",
                 view=gloves.example(page),
-                content=ft.Image(src="assets/с2.png",
+                content=ft.Image(src="с2.png",
                                  height=int(int(page.height) / 3.5),
                                  fit=ft.ImageFit.FIT_HEIGHT
                                  ),
@@ -60,7 +60,7 @@ def example(page):
                 name="ПРОЧЕЕ",
                 file_name="other.py",
                 view=other.example(page),
-                content=ft.Image(src="assets/с3.png",
+                content=ft.Image(src="с3.png",
                                  height=int(int(page.height) / 3.5),
                                  fit=ft.ImageFit.FIT_HEIGHT
                                  ),
