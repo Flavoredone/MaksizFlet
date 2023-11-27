@@ -1,0 +1,110 @@
+import where
+import catalogue
+import company
+import certif
+import search
+
+import flet as ft
+
+
+class AppTile(ft.Container):
+    def __init__(self, name, view, file_name, content):
+        super().__init__()
+        self.view = view
+        self.content = content
+        self.title = ft.Text(name)
+        self.on_click = self.app_button_clicked
+        self.name = name
+        self.file_name = file_name
+
+        self.alignment = ft.alignment.center
+
+    @staticmethod
+    def app_button_clicked(e):
+        e.control.page.views.append(
+            ft.View(
+                bgcolor="#333333",
+                controls=[
+                    ft.AppBar(
+                        title=ft.Text(f"{e.control.name}"),
+                        bgcolor="#333333",
+                    ),
+                    e.control.view,
+                ],
+            )
+        )
+        e.control.page.update()
+
+
+def main(page: ft.Page):
+    page.add(
+        ft.Column(
+            tight=True,
+            scroll=ft.ScrollMode.AUTO,
+            controls=[
+                ft.Text(height=1),
+                AppTile(
+                    name="О КОМПАНИИ",
+                    file_name="company.py",
+                    view=company.example(page),
+                    content=ft.Image(src="assets/1.png",
+                                     # width=250,
+                                     height=int(int(page.height) / 5.5),
+                                     fit=ft.ImageFit.FIT_HEIGHT
+                                     ),
+                ),
+                AppTile(
+                    name="ПОИСК ПО НОМЕРУ CAS",
+                    file_name="search.py",
+                    view=search.example(page),
+                    content=ft.Image(src="assets/2.png",
+                                     # width=250,
+                                     height=int(int(page.height) / 5.5),
+                                     fit=ft.ImageFit.FIT_HEIGHT
+                                     ),
+                ),
+                AppTile(
+                    name="КАТАЛОГ",
+                    file_name="catalogue.py",
+                    view=catalogue.example(page),
+                    content=ft.Image(src="assets/3.png",
+                                     # width=250,
+                                     height=int(int(page.height) / 5.5),
+                                     fit=ft.ImageFit.FIT_HEIGHT
+                                     ),
+                ),
+                AppTile(
+                    name="ДОКУМЕНТАЦИЯ",
+                    file_name="certif.py",
+                    view=certif.example(page),
+                    content=ft.Image(src="assets/4.png",
+                                     # width=250,
+                                     height=int(int(page.height) / 5.5),
+                                     fit=ft.ImageFit.FIT_HEIGHT
+                                     ),
+                ),
+                AppTile(
+                    name="ГДЕ КУПИТЬ",
+                    file_name="where.py",
+                    view=where.example(page),
+                    content=ft.Image(src="assets/5.png",
+                                     # width=250,
+                                     height=int(int(page.height) / 5.5),
+                                     fit=ft.ImageFit.FIT_HEIGHT
+                                     ),
+                ),
+            ],
+        )
+    )
+
+    def view_pop(view):
+        page.views.pop()
+        top_view = page.views[0]
+        page.go(top_view.route)
+
+    page.on_view_pop = view_pop
+    page.bgcolor = "#333333"
+    page.update()
+
+
+ft.app(target=main, assets_dir="assets", view=ft.WEB_BROWSER) #, view=ft.WEB_BROWSER
