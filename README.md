@@ -1,0 +1,2 @@
+# MaksizFlet
+Flet PWA app
