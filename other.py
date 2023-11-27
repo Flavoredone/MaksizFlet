@@ -3,7 +3,7 @@ import flet as ft
 
 def example(page):
     img = ft.Image(
-        src=f"assets/oth/4.jpg",
+        src=f"oth/4.jpg",
         width=int(int(page.height) / 1.4),
     )
 
