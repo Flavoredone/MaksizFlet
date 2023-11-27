@@ -64,15 +64,15 @@ def example(page):
                         spacing=70,
                         controls=[
                             ft.Container(
-                                content=ft.Image(src="assets/cert/1.jpg"),
+                                content=ft.Image(src="cert/1.jpg"),
                                 on_click=view1,
                             ),
                             ft.Container(
-                                content=ft.Image(src="assets/cert/2.jpg"),
+                                content=ft.Image(src="cert/2.jpg"),
                                 on_click=view2,
                             ),
                             ft.Container(
-                                content=ft.Image(src="assets/cert/3.jpg"),
+                                content=ft.Image(src="cert/3.jpg"),
                                 on_click=view3,
                             ),
                         ]
@@ -83,15 +83,15 @@ def example(page):
                         spacing=70,
                         controls=[
                             ft.Container(
-                                content=ft.Image(src="assets/cert/4.jpg"),
+                                content=ft.Image(src="cert/4.jpg"),
                                 on_click=view4,
                             ),
                             ft.Container(
-                                content=ft.Image(src="assets/cert/5.jpg"),
+                                content=ft.Image(src="cert/5.jpg"),
                                 on_click=view5,
                             ),
                             ft.Container(
-                                content=ft.Image(src="assets/cert/6.jpg"),
+                                content=ft.Image(src="cert/6.jpg"),
                                 on_click=view6,
                             ),
                         ]
@@ -102,15 +102,15 @@ def example(page):
                         spacing=70,
                         controls=[
                             ft.Container(
-                                content=ft.Image(src="assets/cert/7.jpg"),
+                                content=ft.Image(src="cert/7.jpg"),
                                 on_click=view7,
                             ),
                             ft.Container(
-                                content=ft.Image(src="assets/cert/8.jpg"),
+                                content=ft.Image(src="cert/8.jpg"),
                                 on_click=view8,
                             ),
                             ft.Container(
-                                content=ft.Image(src="assets/cert/9.jpg"),
+                                content=ft.Image(src="cert/9.jpg"),
                                 on_click=view9,
                             ),
                         ]
