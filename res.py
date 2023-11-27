@@ -11,7 +11,7 @@ def example(page):
     else:
         res = [
             ft.Image(
-                src=f"assets/kivy/search/results/{img}.jpg",
+                src=f"kivy/search/results/{img}.jpg",
                 width=400,
             )
             for img in imgres
