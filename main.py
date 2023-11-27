@@ -47,7 +47,7 @@ def main(page: ft.Page):
                     name="О КОМПАНИИ",
                     file_name="company.py",
                     view=company.example(page),
-                    content=ft.Image(src="assets/1.png",
+                    content=ft.Image(src="1.png",
                                      # width=250,
                                      height=int(int(page.height) / 5.5),
                                      fit=ft.ImageFit.FIT_HEIGHT
@@ -57,7 +57,7 @@ def main(page: ft.Page):
                     name="ПОИСК ПО НОМЕРУ CAS",
                     file_name="search.py",
                     view=search.example(page),
-                    content=ft.Image(src="assets/2.png",
+                    content=ft.Image(src="2.png",
                                      # width=250,
                                      height=int(int(page.height) / 5.5),
                                      fit=ft.ImageFit.FIT_HEIGHT
@@ -67,7 +67,7 @@ def main(page: ft.Page):
                     name="КАТАЛОГ",
                     file_name="catalogue.py",
                     view=catalogue.example(page),
-                    content=ft.Image(src="assets/3.png",
+                    content=ft.Image(src="3.png",
                                      # width=250,
                                      height=int(int(page.height) / 5.5),
                                      fit=ft.ImageFit.FIT_HEIGHT
@@ -77,7 +77,7 @@ def main(page: ft.Page):
                     name="ДОКУМЕНТАЦИЯ",
                     file_name="certif.py",
                     view=certif.example(page),
-                    content=ft.Image(src="assets/4.png",
+                    content=ft.Image(src="4.png",
                                      # width=250,
                                      height=int(int(page.height) / 5.5),
                                      fit=ft.ImageFit.FIT_HEIGHT
@@ -87,7 +87,7 @@ def main(page: ft.Page):
                     name="ГДЕ КУПИТЬ",
                     file_name="where.py",
                     view=where.example(page),
-                    content=ft.Image(src="assets/5.png",
+                    content=ft.Image(src="5.png",
                                      # width=250,
                                      height=int(int(page.height) / 5.5),
                                      fit=ft.ImageFit.FIT_HEIGHT
