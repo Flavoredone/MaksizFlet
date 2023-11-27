@@ -4,21 +4,21 @@ import flet as ft
 def example(page):
 
     img = ft.Image(
-        src="assets/kivy/company/comp_menu.jpg",
+        src="kivy/company/comp_menu.jpg",
         height=int(int(page.height) / 1.2),
         width=int(int(page.height) / 2.37),
     )
 
     def history(e):
-        img.src = str("assets/kivy/company/comp_1.jpg")
+        img.src = str("kivy/company/comp_1.jpg")
         e.control.page.update()
 
     def mission(e):
-        img.src = str("assets/kivy/company/comp_2.jpg")
+        img.src = str("kivy/company/comp_2.jpg")
         e.control.page.update()
 
     def uses(e):
-        img.src = str("assets/kivy/company/comp_3.jpg")
+        img.src = str("kivy/company/comp_3.jpg")
         e.control.page.update()
 
     return ft.Row(
