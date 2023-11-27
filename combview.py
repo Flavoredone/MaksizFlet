@@ -5,7 +5,7 @@ from results import cat
 def example(page):
 
     img = ft.Image(
-        src=f"assets/comb/combiew/{cat[-1]}.jpg",
+        src=f"comb/combiew/{cat[-1]}.jpg",
         width=int(int(page.height) / 1.4),
     )
     try:
