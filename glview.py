@@ -4,7 +4,7 @@ from results import gl
 
 def example(page):
     img = ft.Image(
-        src=f"assets/oth/{gl[-1]}.jpg",
+        src=f"oth/{gl[-1]}.jpg",
         width=int(int(page.height) / 1.4),
     )
     try:
