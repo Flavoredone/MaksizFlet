@@ -5,7 +5,7 @@ from results import cert
 def example(page):
 
     img = ft.Image(
-        src=f"assets/cert/out/{cert[-1]}.jpg",
+        src=f"cert/out/{cert[-1]}.jpg",
         width=int(int(page.height) / 1.4),
     )
     try:
