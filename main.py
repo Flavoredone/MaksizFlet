@@ -117,6 +117,7 @@ def main(page: ft.Page):
             # primary='#F74F10',
             primary='#FFFFFF',
             primary_container='#F74F10',
+            inverse_primary='#FFFFFF',
         ),
         font_family="Teko"
     )

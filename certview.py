@@ -6,7 +6,7 @@ def example(page):
 
     img = ft.Image(
         src=f"cert/out/{cert[-1]}.jpg",
-        width=int(int(page.height) / 1.4),
+        width=int(int(page.width) / 1.1),
     )
     try:
         cert.clear()

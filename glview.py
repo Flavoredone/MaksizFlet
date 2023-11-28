@@ -5,7 +5,7 @@ from results import gl
 def example(page):
     img = ft.Image(
         src=f"oth/{gl[-1]}.jpg",
-        width=int(int(page.width) / 2),
+        width=int(int(page.width) / 1.2),
     )
     try:
         gl.clear()

@@ -6,7 +6,7 @@ def example(page):
 
     img = ft.Image(
         src=f"comb/combiew/{cat[-1]}.jpg",
-        width=int(int(page.width) / 2),
+        width=int(int(page.width) / 1.2),
     )
     try:
         cat.clear()

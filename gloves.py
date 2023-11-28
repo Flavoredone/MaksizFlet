@@ -40,7 +40,7 @@ def example(page):
                         width=int(int(page.width) / 1.5),
                         text="HOUSEHOLD GLOVES",
                         bgcolor="#F74F10",
-                        height=20,
+                        height=50,
                         color="#FFFFFF"
                     ),
                     ft.ElevatedButton(
@@ -48,7 +48,7 @@ def example(page):
                         width=int(int(page.width) / 1.5),
                         text="PHYSICAL PROTECTIVE GLOVES",
                         bgcolor="#F74F10",
-                        height=20,
+                        height=50,
                         color="#FFFFFF"
                     ),
                     ft.ElevatedButton(
@@ -56,7 +56,7 @@ def example(page):
                         width=int(int(page.width) / 1.5),
                         text="REAGENT PROTECTIVE GLOVES",
                         bgcolor="#F74F10",
-                        height=20,
+                        height=50,
                         color="#FFFFFF"
                     )
                 ],
