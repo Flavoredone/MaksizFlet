@@ -39,7 +39,7 @@ def example(page):
             ft.View(
                 bgcolor="#333333",
                 controls=[
-                    ft.AppBar(bgcolor="#333333", title=ft.Text("РЕЗУЛЬТАТ ПОИСКА")),
+                    ft.AppBar(bgcolor="#333333", title=ft.Text("РЕЗУЛЬТАТ ПОИСКА", color=f"#FFFFFF")),
                     res.example(page),
                 ],
             )
@@ -49,28 +49,27 @@ def example(page):
     res_btn = ft.ElevatedButton(
         text="ПЕРЕЙТИ К РЕЗУЛЬТАТУ",
         on_click=res_click,
-        # width=int(int(page.width) / 2.2),
         bgcolor="#F74F10",
         height=50,
         color="#FFFFFF"
     )
 
     rg1 = ft.RadioGroup(content=ft.Column([
-        ft.Radio(value="1", label="твердое вещество"),
-        ft.Radio(value="2", label="жидкость, в том числе аэрозоли"),
-        ft.Radio(value="3", label="газ")]))
+        ft.Radio(value="1", label="твердое вещество", fill_color=f"#FFFFFF"),
+        ft.Radio(value="2", label="жидкость, в том числе аэрозоли", fill_color=f"#FFFFFF"),
+        ft.Radio(value="3", label="газ", fill_color=f"#FFFFFF")]))
 
     rg2 = ft.RadioGroup(content=ft.Column([
-        ft.Radio(value="1", label="имеется"),
-        ft.Radio(value="2", label="не имеется")]))
+        ft.Radio(value="1", label="имеется", fill_color=f"#FFFFFF"),
+        ft.Radio(value="2", label="не имеется", fill_color=f"#FFFFFF")]))
 
     rg3 = ft.RadioGroup(content=ft.Column([
-        ft.Radio(value="1", label="умеренный"),
-        ft.Radio(value="2", label="тяжелый")]))
+        ft.Radio(value="1", label="умеренный", fill_color=f"#FFFFFF"),
+        ft.Radio(value="2", label="тяжелый", fill_color=f"#FFFFFF")]))
 
     rg4 = ft.RadioGroup(content=ft.Column([
-        ft.Radio(value="1", label="да"),
-        ft.Radio(value="2", label="нет")]))
+        ft.Radio(value="1", label="да", fill_color=f"#FFFFFF"),
+        ft.Radio(value="2", label="нет", fill_color=f"#FFFFFF")]))
 
     return ft.Column(
         expand=True,
@@ -105,7 +104,8 @@ def example(page):
                 # scroll=ft.ScrollMode.HIDDEN,
                 alignment=ft.MainAxisAlignment.CENTER,
             )
-        ]
+        ],
+        scroll=ft.ScrollMode.HIDDEN,
     )
 
 

@@ -23,7 +23,7 @@ class CatalogueObj(ft.Container):
                 bgcolor="#333333",
                 controls=[
                     ft.AppBar(
-                        title=ft.Text(f"{e.control.name}"),
+                        title=ft.Text(f"{e.control.name}", color=f"#FFFFFF"),
                         bgcolor="#333333",
                     ),
                     e.control.view,

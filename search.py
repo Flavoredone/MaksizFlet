@@ -38,7 +38,7 @@ def example(page):
             ft.View(
                 bgcolor="#333333",
                 controls=[
-                    ft.AppBar(bgcolor="#333333", title=ft.Text("РЕЗУЛЬТАТ ПОИСКА")),
+                    ft.AppBar(bgcolor="#333333", title=ft.Text("РЕЗУЛЬТАТ ПОИСКА", color=f"#FFFFFF")),
                     res.example(page),
                 ],
             )

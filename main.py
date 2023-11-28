@@ -28,7 +28,7 @@ class AppTile(ft.Container):
                 bgcolor="#333333",
                 controls=[
                     ft.AppBar(
-                        title=ft.Text(f"{e.control.name}", font_family="Teko"),
+                        title=ft.Text(f"{e.control.name}", font_family="Teko", color=f"#FFFFFF"),
                         bgcolor="#333333",
                     ),
                     e.control.view,

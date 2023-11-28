@@ -45,7 +45,7 @@ def example(page):
             ft.View(
                 bgcolor="#333333",
                 controls=[
-                    ft.AppBar(bgcolor="#333333", title=ft.Text("ДОКУМЕНТАЦИЯ")),
+                    ft.AppBar(bgcolor="#333333", title=ft.Text("ДОКУМЕНТАЦИЯ", color=f"#FFFFFF")),
                     certview.example(page),
                 ],
             )
