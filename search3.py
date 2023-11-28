@@ -48,13 +48,21 @@ def example(page):
         for sub in ddn_otrasl
     }
 
-    next_btn = ft.FilledButton(
+    next_btn = ft.ElevatedButton(
         text="ДЕЯТЕЛЬНОСТЬ НЕИЗВЕСТНА",
-        on_click=next_click
+        on_click=next_click,
+        width=int(int(page.width) / 2.2),
+        bgcolor="#F74F10",
+        height=50,
+        color="#FFFFFF"
     )
-    res_btn = ft.FilledButton(
+    res_btn = ft.ElevatedButton(
         text="ПЕРЕЙТИ К РЕЗУЛЬТАТУ",
-        on_click=res_click
+        on_click=res_click,
+        width=int(int(page.width) / 2.2),
+        bgcolor="#F74F10",
+        height=50,
+        color="#FFFFFF"
     )
 
     list_view = ft.ListView(expand=1, spacing=10, padding=20)
@@ -69,6 +77,7 @@ def example(page):
                     next_btn,
                     res_btn,
                 ],
+                spacing=100,
                 alignment=ft.MainAxisAlignment.CENTER,
             ),
             ft.Text(height=10),

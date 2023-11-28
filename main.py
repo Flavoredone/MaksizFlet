@@ -1,3 +1,5 @@
+from flet_core import Theme
+
 import where
 import catalogue
 import company
@@ -26,7 +28,7 @@ class AppTile(ft.Container):
                 bgcolor="#333333",
                 controls=[
                     ft.AppBar(
-                        title=ft.Text(f"{e.control.name}"),
+                        title=ft.Text(f"{e.control.name}", font_family="Teko"),
                         bgcolor="#333333",
                     ),
                     e.control.view,
@@ -104,6 +106,21 @@ def main(page: ft.Page):
 
     page.on_view_pop = view_pop
     page.bgcolor = "#333333"
+
+    page.fonts = {
+        "Teko": "/fonts/Teko-Regular.ttf"
+    }
+
+    page.theme = Theme(
+        # color_scheme_seed='#F74F10',
+        color_scheme=ft.ColorScheme(
+            # primary='#F74F10',
+            primary='#FFFFFF',
+            primary_container='#F74F10',
+        ),
+        font_family="Teko"
+    )
+
     page.update()
 
 

@@ -71,10 +71,6 @@ def example(page):
                                 content=ft.Image(src="cert/2.jpg"),
                                 on_click=view2,
                             ),
-                            ft.Container(
-                                content=ft.Image(src="cert/3.jpg"),
-                                on_click=view3,
-                            ),
                         ]
                     ),
                     ft.Row(
@@ -83,9 +79,20 @@ def example(page):
                         spacing=70,
                         controls=[
                             ft.Container(
+                                content=ft.Image(src="cert/3.jpg"),
+                                on_click=view3,
+                            ),
+                            ft.Container(
                                 content=ft.Image(src="cert/4.jpg"),
                                 on_click=view4,
                             ),
+                        ]
+                    ),
+                    ft.Row(
+                        alignment=ft.MainAxisAlignment.CENTER,
+                        height=int(int(page.height) / 3.5),
+                        spacing=70,
+                        controls=[
                             ft.Container(
                                 content=ft.Image(src="cert/5.jpg"),
                                 on_click=view5,
@@ -101,6 +108,7 @@ def example(page):
                         height=int(int(page.height) / 3.5),
                         spacing=70,
                         controls=[
+
                             ft.Container(
                                 content=ft.Image(src="cert/7.jpg"),
                                 on_click=view7,
@@ -109,6 +117,13 @@ def example(page):
                                 content=ft.Image(src="cert/8.jpg"),
                                 on_click=view8,
                             ),
+                        ]
+                    ),
+                    ft.Row(
+                        alignment=ft.MainAxisAlignment.CENTER,
+                        height=int(int(page.height) / 3.5),
+                        spacing=70,
+                        controls=[
                             ft.Container(
                                 content=ft.Image(src="cert/9.jpg"),
                                 on_click=view9,
@@ -116,6 +131,7 @@ def example(page):
                         ]
                     ),
                 ],
+                scroll=ft.ScrollMode.HIDDEN,
                 alignment=ft.MainAxisAlignment.CENTER,
             )
         ],

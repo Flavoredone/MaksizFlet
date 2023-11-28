@@ -46,9 +46,13 @@ def example(page):
         )
         page.update()
 
-    res_btn = ft.FilledButton(
+    res_btn = ft.ElevatedButton(
         text="ПЕРЕЙТИ К РЕЗУЛЬТАТУ",
-        on_click=res_click
+        on_click=res_click,
+        width=int(int(page.width) / 2.2),
+        bgcolor="#F74F10",
+        height=50,
+        color="#FFFFFF"
     )
 
     rg1 = ft.RadioGroup(content=ft.Column([
@@ -92,11 +96,13 @@ def example(page):
                     ft.Text(height=50),
                     ft.Text("Нужна ли дополнительная защита шва путем проклейки?"),
                     rg4,
-                    ft.Text(height=500),
+                    ft.Text(height=200),
                 ],
+                    scroll=ft.ScrollMode.HIDDEN,
                     alignment=ft.MainAxisAlignment.CENTER
                 )
             ],
+                scroll=ft.ScrollMode.HIDDEN,
                 alignment=ft.MainAxisAlignment.CENTER,
             )
         ]

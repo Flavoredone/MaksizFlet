@@ -103,6 +103,7 @@ def example(page):
                     )
                 ],
                 alignment=ft.MainAxisAlignment.CENTER,
+                scroll=ft.ScrollMode.ALWAYS,
             )
         ],
     )

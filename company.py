@@ -30,28 +30,31 @@ def example(page):
                     ft.Row(
                         alignment=ft.MainAxisAlignment.CENTER,
                         controls=[
-                            ft.FilledButton(
-                                            content=ft.Column([ft.Text("ИСТОРИЯ", size=10)]),
+                            ft.ElevatedButton(
+                                            content=ft.Column([ft.Text("ИСТОРИЯ", size=9, color="#ffffff")]),
                                             on_click=history,
-                                            width=int(int(img.width)/3),
+                                            bgcolor="#F74F10",
+                                            width=int(int(img.width)/3.3),
                                             ),
-                            ft.FilledButton(
+                            ft.ElevatedButton(
                                             content=ft.Column(
                                                 [
-                                                    ft.Text("МИССИЯ", size=10)
+                                                    ft.Text("МИССИЯ", size=9, color="#ffffff")
                                                 ]
                                             ),
                                             on_click=mission,
-                                            width=int(int(img.width)/3),
+                                            bgcolor="#F74F10",
+                                            width=int(int(img.width)/3.3),
                                             ),
-                            ft.FilledButton(
+                            ft.ElevatedButton(
                                             content=ft.Column(
                                                 [
-                                                    ft.Text("ЦЕННОСТИ", size=10)
+                                                    ft.Text("ЦЕННОСТИ", size=9, color="#ffffff")
                                                 ]
                                             ),
                                             on_click=uses,
-                                            width=int(int(img.width)/3),
+                                            bgcolor="#F74F10",
+                                            width=int(int(img.width)/3.3),
                                             ),
                         ]
                     ),

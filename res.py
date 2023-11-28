@@ -12,7 +12,7 @@ def example(page):
         res = [
             ft.Image(
                 src=f"kivy/search/results/{img}.jpg",
-                width=400,
+                width=int(int(page.width) / 2),
             )
             for img in imgres
         ]

@@ -3,42 +3,52 @@ import flet as ft
 
 def example(page):
 
+    def copy(e):
+        e.page.set_clipboard(e.control.text)
+        e.page.add(ft.SnackBar(ft.Text(f"Скопировано: {e.control.text[17:]}"), open=True))
+
     st1 = ft.Column(
         [
             ft.Image(
                 src=f"where/1.png",
+                width=350,
                 height=int(int(page.height) / 7.7),
             ),
-            ft.Text("Компания: АО «ФПГ ЭНЕРГОКОНТРАКТ»"),
-            ft.Text("Телефон:  +7 (495) 645-00-11"),
-            ft.Text("Почта:    fpg@energocontract.ru"),
-            ft.Text("Сайт:     https://energocontract.ru/"),
+            ft.TextButton("     Компания:   АО «ФПГ ЭНЕРГОКОНТРАКТ»", on_click=copy),
+            ft.TextButton("     Телефон:    +7 (495) 645-00-11", on_click=copy),
+            ft.TextButton("     Почта:      fpg@energocontract.ru", on_click=copy),
+            ft.TextButton("     Сайт:       https://energocontract.ru/",
+                          on_click=lambda e: page.launch_url('https://energocontract.ru/')),
         ],
     )
 
     st2 = ft.Column(
         [
             ft.Image(
+                width=350,
                 src=f"where/2.png",
                 height=int(int(page.height) / 7.7),
             ),
-            ft.Text("Компания: «Техноавиа»"),
-            ft.Text("Телефон:  +7 (495) 787-90-30"),
-            ft.Text("Почта:    zakaz@technoavia.ru"),
-            ft.Text("Сайт:     https://www.technoavia.ru/"),
+            ft.TextButton("     Компания:   «Техноавиа»", on_click=copy),
+            ft.TextButton("     Телефон:    +7 (495) 787-90-30", on_click=copy),
+            ft.TextButton("     Почта:      zakaz@technoavia.ru", on_click=copy),
+            ft.TextButton("     Сайт:       https://www.technoavia.ru/",
+                          on_click=lambda e: page.launch_url('https://www.technoavia.ru/')),
         ],
     )
 
     st3 = ft.Column(
         [
             ft.Image(
+                width=350,
                 src=f"where/3.png",
                 height=int(int(page.height) / 7.7),
             ),
-            ft.Text("Компания: «ВОСТОК-СЕРВИС»"),
-            ft.Text("Телефон:  +7 (495) 665-0-665"),
-            ft.Text("Почта:    magazin@vostok.ru"),
-            ft.Text("Сайт:     https://vostok.ru/"),
+            ft.TextButton("     Компания:   «ВОСТОК-СЕРВИС»", on_click=copy),
+            ft.TextButton("     Телефон:    +7 (495) 665-0-665", on_click=copy),
+            ft.TextButton("     Почта:      magazin@vostok.ru", on_click=copy),
+            ft.TextButton("     Сайт:       https://vostok.ru/",
+                          on_click=lambda e: page.launch_url('https://vostok.ru/')),
         ],
     )
 
@@ -48,10 +58,11 @@ def example(page):
         controls=[
             ft.Column(
                 [
-                    st1,
+                    st3,
                     st2,
-                    st3
+                    st1
                 ],
+                scroll=ft.ScrollMode.HIDDEN,
                 alignment=ft.MainAxisAlignment.CENTER,
             )
         ],

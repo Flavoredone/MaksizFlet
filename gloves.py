@@ -2,6 +2,7 @@ import flet as ft
 import glview
 from results import gl
 
+
 def example(page):
 
     def view1(e):
@@ -34,20 +35,29 @@ def example(page):
         controls=[
             ft.Column(
                 [
-                    ft.FilledButton(
+                    ft.ElevatedButton(
                         on_click=view1,
                         width=int(int(page.width) / 1.5),
-                        text="HOUSEHOLD GLOVES"
+                        text="HOUSEHOLD GLOVES",
+                        bgcolor="#F74F10",
+                        height=20,
+                        color="#FFFFFF"
                     ),
-                    ft.FilledButton(
+                    ft.ElevatedButton(
                         on_click=view2,
                         width=int(int(page.width) / 1.5),
-                        text="PHYSICAL PROTECTIVE GLOVES"
+                        text="PHYSICAL PROTECTIVE GLOVES",
+                        bgcolor="#F74F10",
+                        height=20,
+                        color="#FFFFFF"
                     ),
-                    ft.FilledButton(
+                    ft.ElevatedButton(
                         on_click=view3,
                         width=int(int(page.width) / 1.5),
-                        text="REAGENT PROTECTIVE GLOVES"
+                        text="REAGENT PROTECTIVE GLOVES",
+                        bgcolor="#F74F10",
+                        height=20,
+                        color="#FFFFFF"
                     )
                 ],
                 alignment=ft.MainAxisAlignment.CENTER,
