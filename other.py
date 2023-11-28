@@ -4,7 +4,7 @@ import flet as ft
 def example(page):
     img = ft.Image(
         src=f"oth/4.jpg",
-        width=int(int(page.width) / 2),
+        width=int(int(page.width) / 1.2),
     )
 
     return ft.Row(
