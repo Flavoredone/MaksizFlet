@@ -34,7 +34,7 @@ def example(page):
                                             content=ft.Column([ft.Text("ИСТОРИЯ", size=14, color="#ffffff")]),
                                             on_click=history,
                                             bgcolor="#F74F10",
-                                            width=int(int(img.width)/3.3),
+                                            # width=int(int(img.width)/3.3),
                                             ),
                             ft.ElevatedButton(
                                             content=ft.Column(
@@ -44,7 +44,7 @@ def example(page):
                                             ),
                                             on_click=mission,
                                             bgcolor="#F74F10",
-                                            width=int(int(img.width)/3.3),
+                                            # width=int(int(img.width)/3.3),
                                             ),
                             ft.ElevatedButton(
                                             content=ft.Column(
@@ -54,7 +54,7 @@ def example(page):
                                             ),
                                             on_click=uses,
                                             bgcolor="#F74F10",
-                                            width=int(int(img.width)/3.3),
+                                            # width=int(int(img.width)/3.3),
                                             ),
                         ]
                     ),
