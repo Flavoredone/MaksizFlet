@@ -112,12 +112,11 @@ def main(page: ft.Page):
     }
 
     page.theme = Theme(
-        # color_scheme_seed='#F74F10',
+        color_scheme_seed='#FFFFFF',
         color_scheme=ft.ColorScheme(
-            # primary='#F74F10',
             primary='#FFFFFF',
-            primary_container='#F74F10',
-            inverse_primary='#FFFFFF',
+            tertiary='#FFFFFF',
+            secondary='#FFFFFF',
         ),
         font_family="Teko"
     )

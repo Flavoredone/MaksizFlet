@@ -31,7 +31,7 @@ def example(page):
                         alignment=ft.MainAxisAlignment.CENTER,
                         controls=[
                             ft.ElevatedButton(
-                                            content=ft.Column([ft.Text("ИСТОРИЯ", size=9, color="#ffffff")]),
+                                            content=ft.Column([ft.Text("ИСТОРИЯ", size=14, color="#ffffff")]),
                                             on_click=history,
                                             bgcolor="#F74F10",
                                             width=int(int(img.width)/3.3),
@@ -39,7 +39,7 @@ def example(page):
                             ft.ElevatedButton(
                                             content=ft.Column(
                                                 [
-                                                    ft.Text("МИССИЯ", size=9, color="#ffffff")
+                                                    ft.Text("МИССИЯ", size=14, color="#ffffff")
                                                 ]
                                             ),
                                             on_click=mission,
@@ -49,7 +49,7 @@ def example(page):
                             ft.ElevatedButton(
                                             content=ft.Column(
                                                 [
-                                                    ft.Text("ЦЕННОСТИ", size=9, color="#ffffff")
+                                                    ft.Text("ЦЕННОСТИ", size=14, color="#ffffff")
                                                 ]
                                             ),
                                             on_click=uses,

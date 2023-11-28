@@ -65,7 +65,7 @@ def example(page):
     next_btn = ft.ElevatedButton(
         text="ВЕЩЕСТВО НЕИЗВЕСТНО",
         on_click=next_click,
-        width=int(int(page.width) / 2.2),
+        # width=int(int(page.width) / 2.2),
         bgcolor="#F74F10",
         height=50,
         color="#FFFFFF"
@@ -73,7 +73,7 @@ def example(page):
     res_btn = ft.ElevatedButton(
         text="ПЕРЕЙТИ К РЕЗУЛЬТАТУ",
         on_click=res_click,
-        width=int(int(page.width) / 2.2),
+        # width=int(int(page.width) / 2.2),
         bgcolor="#F74F10",
         height=50,
         color="#FFFFFF"
@@ -90,7 +90,7 @@ def example(page):
                     next_btn,
                     res_btn,
                 ],
-                spacing=100,
+                spacing=10,
                 alignment=ft.MainAxisAlignment.CENTER,
             ),
             ft.Text(height=10),

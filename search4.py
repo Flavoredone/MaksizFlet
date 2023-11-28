@@ -49,7 +49,7 @@ def example(page):
     res_btn = ft.ElevatedButton(
         text="ПЕРЕЙТИ К РЕЗУЛЬТАТУ",
         on_click=res_click,
-        width=int(int(page.width) / 2.2),
+        # width=int(int(page.width) / 2.2),
         bgcolor="#F74F10",
         height=50,
         color="#FFFFFF"
@@ -85,24 +85,24 @@ def example(page):
             ft.Text(height=50),
             ft.Row([
                 ft.Column([
-                    ft.Text("Каково физическое состояние вашей опасности в момент ее возникновения?"),
+                    ft.Text("Каково физическое состояние вашей опасности в момент ее возникновения?", color="#FFFFFF"),
                     rg1,
-                    ft.Text(height=50),
-                    ft.Text("Наличие или опасность взаимодействия с открытым пламенем:"),
+                    ft.Text(height=10),
+                    ft.Text("Наличие или опасность взаимодействия с открытым пламенем:", color="#FFFFFF"),
                     rg2,
-                    ft.Text(height=50),
-                    ft.Text("Контактный уровень взаимодействия с одеждой:"),
+                    ft.Text(height=10),
+                    ft.Text("Контактный уровень взаимодействия с одеждой:", color="#FFFFFF"),
                     rg3,
-                    ft.Text(height=50),
-                    ft.Text("Нужна ли дополнительная защита шва путем проклейки?"),
+                    ft.Text(height=10),
+                    ft.Text("Нужна ли дополнительная защита шва путем проклейки?", color="#FFFFFF"),
                     rg4,
-                    ft.Text(height=200),
+                    ft.Text(height=500),
                 ],
                     scroll=ft.ScrollMode.HIDDEN,
                     alignment=ft.MainAxisAlignment.CENTER
                 )
             ],
-                scroll=ft.ScrollMode.HIDDEN,
+                # scroll=ft.ScrollMode.HIDDEN,
                 alignment=ft.MainAxisAlignment.CENTER,
             )
         ]
