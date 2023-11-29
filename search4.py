@@ -95,10 +95,8 @@ def example(page):
                     ft.Text(height=10),
                     ft.Text("Нужна ли дополнительная защита шва путем проклейки?", color="#FFFFFF"),
                     rg4,
-                    ft.Text(height=500),
                 ],
                     scroll=ft.ScrollMode.HIDDEN,
-                    alignment=ft.MainAxisAlignment.CENTER
                 )
             ],
                 # scroll=ft.ScrollMode.HIDDEN,

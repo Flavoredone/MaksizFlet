@@ -3,6 +3,20 @@ import flet as ft
 
 def example(page):
 
+    def show_view(e):
+        cur = e.control.text[17:]
+        if str(page.platform) == "macos" or "linux" or "windows":
+            page.launch_url(cur)
+        else:
+            page.views.append(
+                ft.AppBar(bgcolor="#333333", title=ft.Text("САЙТ ПАРТНЕРА", color=f"#FFFFFF")),
+                ft.WebView(
+                    cur,
+                    bgcolor="#333333",
+                )
+            )
+            page.update()
+
     def copy(e):
         e.page.set_clipboard(e.control.text)
         e.page.add(ft.SnackBar(ft.Text(f"Скопировано: {e.control.text[17:]}"), open=True))
@@ -17,8 +31,7 @@ def example(page):
             ft.TextButton("     Компания:   АО «ФПГ ЭНЕРГОКОНТРАКТ»", on_click=copy),
             ft.TextButton("     Телефон:    +7 (495) 645-00-11", on_click=copy),
             ft.TextButton("     Почта:      fpg@energocontract.ru", on_click=copy),
-            ft.TextButton("     Сайт:       https://energocontract.ru/",
-                          on_click=lambda e: page.launch_url('https://energocontract.ru/')),
+            ft.TextButton("     Сайт:       https://energocontract.ru/", on_click=show_view),
         ],
     )
 
@@ -32,8 +45,7 @@ def example(page):
             ft.TextButton("     Компания:   «Техноавиа»", on_click=copy),
             ft.TextButton("     Телефон:    +7 (495) 787-90-30", on_click=copy),
             ft.TextButton("     Почта:      zakaz@technoavia.ru", on_click=copy),
-            ft.TextButton("     Сайт:       https://www.technoavia.ru/",
-                          on_click=lambda e: page.launch_url('https://www.technoavia.ru/')),
+            ft.TextButton("     Сайт:       https://www.technoavia.ru/", on_click=show_view),
         ],
     )
 
@@ -47,8 +59,7 @@ def example(page):
             ft.TextButton("     Компания:   «ВОСТОК-СЕРВИС»", on_click=copy),
             ft.TextButton("     Телефон:    +7 (495) 665-0-665", on_click=copy),
             ft.TextButton("     Почта:      magazin@vostok.ru", on_click=copy),
-            ft.TextButton("     Сайт:       https://vostok.ru/",
-                          on_click=lambda e: page.launch_url('https://vostok.ru/')),
+            ft.TextButton("     Сайт:       https://vostok.ru/", on_click=show_view),
         ],
     )
 
