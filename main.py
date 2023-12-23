@@ -39,7 +39,7 @@ class AppTile(ft.Container):
 
 
 def main(page: ft.Page):
-
+    print(page.route)
     if str(page.route) == '/privacy_policy':
         page.add(
             ft.Row(
