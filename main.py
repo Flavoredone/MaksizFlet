@@ -39,7 +39,7 @@ class AppTile(ft.Container):
 
 
 def main(page: ft.Page):
-    print(page.route)
+
     if str(page.route) == '/privacy_policy':
         page.add(
             ft.Row(
@@ -155,6 +155,48 @@ def main(page: ft.Page):
         ),
         font_family="Teko"
     )
+
+    def route_change(e: ft.RouteChangeEvent):
+        print(e.route)
+        if str(e.route) == "/privacy_policy":
+            page.clean()
+            page.add(
+                ft.Row(
+                    controls=[
+                        ft.Text("""
+                                       Политика Конфиденциальности: 
+    
+                                       Контактный email: info@maksiz.ru
+    
+                                       Дата вступления в силу: 23 декабря 2023 года.
+    
+                                       Приложение «MAKSIZ» является оффлайн-приложением и не 
+                                       собирает, не хранит и не передает персональные данные 
+                                       пользователя. 
+    
+                                       Приложение не требует доступа к интернету 
+                                       или другим функциям устройства пользователя для своей 
+                                       работы, кроме функций, необходимых для основного 
+                                       функционала (например, просмотр текстов песен). 
+    
+                                       Пользователи могут использовать приложение для просмотра 
+                                       текстов песен, без необходимости предоставлять какую-либо 
+                                       персональную информацию. 
+    
+                                       В случае вопросов или предложений, связанных с работой
+                                       приложения или политикой конфиденциальности, пожалуйста,
+                                       свяжитесь с нами по адресу: info@maksiz.ru
+                                       """,
+                                height=int(page.height),
+                                selectable=True)
+                    ],
+                    alignment=ft.MainAxisAlignment.CENTER,
+                )
+            )
+        else:
+            pass
+
+    page.on_route_change = route_change
     page.update()
 
 
